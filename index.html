@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify</title>
-  <link rel="stylesheet" href="reset.css"> 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/var.css">
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="./src/styles/main-content.css">
   <script src="https://kit.fontawesome.com/71d74e5d48.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="sidebar">
     <nav class="sidebar__navigation">
         <a href="">
-          <img class="logo" src="./assets/icons/logo-spotify.png" alt="logo do Spotify">
+          <img class="logo" src="./src/assets/icons/logo-spotify.png" alt="logo do Spotify">
         </a>
         <ul class="sidebar__list">
           <li class="sidebar__item">
@@ -58,7 +60,34 @@
     </div>
   </div>
 </div>
-</body>
+<main>
+  <div class="main-container">
+    <nav>
+      <div class="navigation">
+        <div class="arrow">
+          <button class="arrow-left">
+            <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+          </button>
+          <button class="arrow-right">
+            <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+          </button>
+        </div>
+        <div class="header__search">
+          <img src="./src/assets/icons/search.png" alt="">
+          <input id="search-input" type="text" maxlenght="800" placeholder="O que você quer ouvir?"/>
+        </div>
+        <div class="header__login">
+          <button class="subscribe">Inscreva-se</button>
+          <button class="login">Entrar</button>
+        </div>
+      </div>
+    </nav>
+    <div class="cards">
+      <span class="cards__title">Boa tarde</span>
+      <span class="cards__subtitle">Navegar por todas as seções</span>
+    </div>
+  </div>
+</main>
 <footer>
   <div class="footer__content">
     <div class="footer__text">
@@ -69,5 +98,6 @@
         <span>Inscreva-se grátis</span>
       </button>
   </div>
-</footer>
+</footer>   
+</body>
 </html>

@@ -1,6 +1,7 @@
 body {
   background-color: #000;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans);
+  display: flex;
 }
 
 .logo {
@@ -12,8 +13,8 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
-}
+  width: 15vw;
+} 
 
 .sidebar__navigation {
   background-color: #121212;
@@ -193,4 +194,4 @@ footer .footer__button {
   padding: 10px 16px;
   margin-right: 16px;
   cursor: pointer;
-}
+}  
